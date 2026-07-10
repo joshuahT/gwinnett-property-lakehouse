@@ -3,7 +3,7 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
-variable "enviroment" {
+variable "environment" {
    type = string 
    default = "dev"
   }
