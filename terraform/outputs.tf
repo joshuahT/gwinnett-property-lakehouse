@@ -1,5 +1,3 @@
-
 output "bucket_name" {
-  value = aws_s3_bucket.lakehouse.bucket
+  value = module.s3.bucket_name
 }
-
