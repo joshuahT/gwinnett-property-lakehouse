@@ -13,10 +13,21 @@ variable "databricks_host" {
   type        = string
 }
 
-
-
 variable "databricks_token" {
   description = "Databricks personal access token"
   type        = string
   sensitive   = true
 }
+
+variable "databricks_account_id" {
+  description = "Databricks account id for AWS"
+  type = string
+  sensitive = true 
+}
+
+variable "databricks_external_id" {
+  description = "Databricks external ID"
+  type = string
+  sensitive = true 
+}
+
