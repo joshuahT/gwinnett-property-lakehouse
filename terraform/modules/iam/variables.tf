@@ -14,7 +14,7 @@ variable "role-name" {
     default = "unity-catalog-gwinnett-role"
 }
 
-variable "bucket-arn" {
+variable "bucket_arn" {
     description = "ARN lakehouse S3 bucket" 
     type = string 
 }
