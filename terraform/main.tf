@@ -9,3 +9,9 @@ module "iam" {
   databricks_account_id= var.databricks_account_id
   databricks_external_id = var.databricks_external_id
 }
+
+module "unity_catalog" {
+  source = "./modules/unity_catalog"
+  bucket_name = module.s3.bucket_name
+  storage_credential_name = var.storage_credential_name
+}

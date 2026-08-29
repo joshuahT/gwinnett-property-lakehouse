@@ -31,3 +31,7 @@ variable "databricks_external_id" {
   sensitive = true 
 }
 
+variable "storage_credential_name" {
+  description = "Name of the storage credential created in the Databricks console"
+  type = string
+}
